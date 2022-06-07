@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Light";
+  src: local("DejaVuSerif"),
+    url("../../fonts/dejavu-serif/DejaVuSerifCondensed.ttf") format("truetype");
+}
+
+.cardContainer {
+  width: 230px;
+  height: 210px;
+  background-color: #cbc9bf;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 12px;
+  align-items: center;
+  margin: 1rem 1rem;
+}
+.today {
+  font-family: "Light";
+  font-size: 25px;
+  color: #58555a;
+  letter-spacing: 2px;
+}
+.image {
+  width: 80px;
+  height: 56px;
+}
+.status {
+  color: #58555a;
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For tablets: */
+  .cardContainer {
+    width: 200px;
+    height: 180px;
+  }
+}
